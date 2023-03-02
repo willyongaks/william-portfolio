@@ -16,9 +16,7 @@
 .App {
   text-align: center;
 }
-body{
-  background-color: var(--primary-color);
-}
+
 
 .sub-nav{
   color: red;
