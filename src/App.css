@@ -12,12 +12,6 @@
 
 }
 
-
-.App {
-  text-align: center;
-}
-
-
-.sub-nav{
-  color: red;
+body{
+  background-color: var(--primary-color);
 }
