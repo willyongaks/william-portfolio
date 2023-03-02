@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-// import styled from 'styled-components/macro';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components/macro';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,25 +10,40 @@ import logo from '../assets/logo.png';
 
 
 
-// const Logo = styled.div`
-//   margin-top: 30px;
-//   width: 70px;
-//   height: 70px;
-// `
+const Logo = styled.img`
+  width: 40px;
+  height: 40px;
+`;
+
+const NavLinkStyled = styled(NavLink)`
+  color: var(--secondary-color);
+`;
+
+
+
+
+
+
+
+
+
+
+
+
 
 function Menu() {
 
   return (
 
-    <Navbar bg="dark" variant="dark">
+    <Navbar variant="dark">
         <Container>
           <Navbar.Brand href="/">
-          <img src={logo} alt='logo'/>
+            <Logo src={logo} alt='logo'/>
           </Navbar.Brand>
           <Nav className="mr-auto">
-            <Link to="/" className='nav-link'>Home</Link>
-            <Link to="/about" className='nav-link'>About</Link>
-            <Link to="/contact" className='nav-link'>Contact</Link>
+            <NavLinkStyled to="/" className='nav-link'>Home</NavLinkStyled>
+            <NavLinkStyled to="/about" className='nav-link'>About</NavLinkStyled>
+            <NavLinkStyled to="/contact" className='nav-link'>Contact</NavLinkStyled>
           </Nav>
         </Container>
     </Navbar>
