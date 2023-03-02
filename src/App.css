@@ -1,5 +1,23 @@
+:root{
+  /* Colors */
+  --primary-color:#000000;
+  --secondary-color:#FF9101;
+  --text-color:#FFFFFF;
+
+  /* Fonts */
+
+  --Large-font:37px;
+  --medium-font:24px;
+  --Small-font:16px;
+
+}
+
+
 .App {
   text-align: center;
+}
+body{
+  background-color: var(--primary-color);
 }
 
 .App-logo {
