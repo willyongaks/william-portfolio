@@ -5,6 +5,7 @@ import backgroundImage from '../../assets/backgroundImage.png';
 const HomeContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+ 
   height: 100vh;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -12,6 +13,14 @@ const HomeContainer = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+
+
+    & > div:first-child {
+      order: 2;
+    }
+    & > div:last-child {
+      order: 1;
+    }
   }
 `;
 
@@ -36,6 +45,10 @@ const SubHeader = styled.div`
   color: var(--text-color);
 `;
 
+const HeaderText = styled.p`
+  color: var(--text-color);
+`;
+
 const RightSide = styled.div`
   position: relative;
   overflow: hidden;
@@ -50,18 +63,18 @@ const Image = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 `;
 const Circle = styled.div`
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background-color: var(--secondary-color);
   opacity: 0.3;
@@ -74,10 +87,10 @@ function Home() {
       <LeftSide>
         <SubHeader>Hi i'm William</SubHeader>
         <Header>frontend-end developer</Header>
-        <p>
+        <HeaderText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        </HeaderText>
       </LeftSide>
       <RightSide>
         <Circle />
