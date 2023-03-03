@@ -14,7 +14,6 @@ const NavContainer = styled.nav`
   padding: .5rem;
   padding-right: 6rem;
   padding-left: 6rem;
- 
 `;
 
 const Logo = styled.img`

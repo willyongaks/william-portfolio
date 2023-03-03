@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import backgroundImage from '../../assets/backgroundImage.png';
+import Projects from '../projects/Projects';
 
 const HomeContainer = styled.div`
   display: grid;
@@ -49,9 +50,15 @@ const HeaderText = styled.p`
   color: var(--text-color);
 `;
 
+const HeaderTextSpan = styled.span`
+  color: var(--secondary-color);
+`;
+
 const RightSide = styled.div`
   position: relative;
   overflow: hidden;
+  width: 100%;
+  
 
   @media screen and (max-width: 768px) {
     height: 100%;
@@ -63,7 +70,7 @@ const Image = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
@@ -76,27 +83,40 @@ const Circle = styled.div`
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background-color: var(--secondary-color);
-  opacity: 0.3;
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  opacity: 1;
   z-index: 0;
+
+   @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
+`;
+
+const ProjectContainer = styled.div`
+  height: 100vh;
 `;
 
 function Home() {
   return (
-    <HomeContainer>
-      <LeftSide>
-        <SubHeader>Hi i'm William</SubHeader>
-        <Header>frontend-end developer</Header>
-        <HeaderText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </HeaderText>
-      </LeftSide>
-      <RightSide>
-        <Circle />
-        <Image src={backgroundImage} alt="your-image" />
-      </RightSide>
-    </HomeContainer>
+    <>
+      <HomeContainer>
+        <LeftSide>
+          <SubHeader>Hi i'm William</SubHeader>
+          <Header>frontend-end developer</Header>
+          <HeaderText>
+            I am a frontend developer based in Oslo. <HeaderTextSpan>Read more</HeaderTextSpan>
+          </HeaderText>
+        </LeftSide>
+        <RightSide>
+          <Circle />
+          <Image src={backgroundImage} alt="your-image" />
+        </RightSide>
+      </HomeContainer>
+      <ProjectContainer>
+        <Projects />
+      </ProjectContainer>
+    </>
   );
 }
 
