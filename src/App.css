@@ -10,6 +10,12 @@
   --medium-font:24px;
   --Small-font:16px;
 
+
+  /* Font family */
+
+  --logo-font-w:'Climate Crisis', cursive;
+  --logo-font-o:'Playfair Display', serif;
+
 }
 
 body{

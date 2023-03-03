@@ -14,10 +14,15 @@ const ProjectHeader = styled.h1`
     text-align: center;
 `;
 
+const TabContent = styled.div`
+    margin: 1.5em 0px;
+`;
+
 function Projects() {
   return (
     <ProjectSection>
         <ProjectHeader>My recent projects</ProjectHeader>
+        <TabContent></TabContent>
     </ProjectSection>
   )
 }

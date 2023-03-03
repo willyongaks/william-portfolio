@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import logo from '../assets/Logo.png'
 
 // STYLED COMPONENTS
 
@@ -11,14 +10,18 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   background-color: var(--primary-color);
   color: #fff;
-  padding: .5rem;
+  padding: 50px 0px;
   padding-right: 6rem;
   padding-left: 6rem;
+  transition: all 0.5s ease 0s;
 `;
 
-const Logo = styled.img`
-  width:40px;
-  height: 40px;
+const Logo = styled.p`
+  font-family: var(--logo-font-w);
+  font-size: var( --medium-font);
+`;
+const LogoSpan = styled.span`
+  color: var(--secondary-color);
 `;
 
 const NavLinks = styled.div`
@@ -141,9 +144,9 @@ function Menu() {
 
   return(
     <NavContainer>
-      <div>
-        <Logo src={logo} alt='logo' />
-      </div>
+        <Logo>
+          wo <LogoSpan>.</LogoSpan>
+        </Logo>
       <NavLinks>
         <NavLinkStyled exact='true' to='/'>Home</NavLinkStyled>
         <NavLinkStyled to='/about' >About</NavLinkStyled>
