@@ -1,14 +1,23 @@
 import React from 'react'
 import styled from 'styled-components';
-import SosholsImage from '../../assets/soshols.png'
+import  Card  from '../../card/Card';
 
 
 
-const ProjectSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    alighn-items: center;
-    justify-content: center;
+const ProjectWrapper = styled.section`
+    width: 100%;
+    height: 100vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px){
+        max-width: 720px;
+    }
+    @media (min-width: 576px){
+        max-width: 540px;
+    }
 `;
 
 const ProjectHeader = styled.h1`
@@ -16,63 +25,55 @@ const ProjectHeader = styled.h1`
     text-align: center;
 `;
 
+const ProectRow = styled.div`
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+`;
+
+const ProectColumn = styled.div`
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (min-width: 768px) {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+`;
+
 const TabContent = styled.div`
     margin: 1.5em 0px;
-`;
-const ProjCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 300px;
-    border-radius: 9px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-`;
+    animation-duration: 1s;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+    column-gap: 1.5em;
 
-const ProjCardImage = styled.img`
-    width: 300px;
-    height: 100%;
-    object-fit: cover;
-    
-`;
-
-const ProjCardContent = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-`;
-const ProjCardTitle = styled.p`
-    color: var(--text-color);
-    margin: 0;
-    font-size: var(--medium-font);
-`;
-
-const ProjCardDescription = styled.p`
-    color: var(--text-color);
-    margin: 0.5em 0 0;
-`;
-
-
+    @media only screen and (min-width: 1024px) {
+        column-count: 2;
+    }
+`; 
 
 
 
 function Projects() {
   return (
-    <ProjectSection>
+      <ProjectWrapper>
         <ProjectHeader>My recent projects</ProjectHeader>
-        <TabContent>
-            <ProjCard>
-                <ProjCardImage src={SosholsImage} alt="Project" />
-                <ProjCardContent>
-                    <ProjCardTitle>Soshols</ProjCardTitle>
-                    <ProjCardDescription>This is a social media project that i was working on</ProjCardDescription>
-                </ProjCardContent>
-            </ProjCard>
-        </TabContent>
-    </ProjectSection>
+          <ProectRow>
+              <ProectColumn>
+                <TabContent>
+                    <Card />
+                    <Card />
+                </TabContent>
+                
+              </ProectColumn>  
+          </ProectRow>
+      </ProjectWrapper>
   )
 }
 
