@@ -36,7 +36,7 @@ const ProectRow = styled.div`
 
 const ProectColumn = styled.div`
     position: relative;
-    width: 100%;
+    max-width: 80%;
     padding-right: 15px;
     padding-left: 15px;
 
@@ -48,9 +48,6 @@ const ProectColumn = styled.div`
 
 const TabContent = styled.div`
     margin: 1.5em 0px;
-    animation-duration: 1s;
-    animation-name: fadeInUp;
-    animation-fill-mode: both;
     column-gap: 1.5em;
 
     @media only screen and (min-width: 1024px) {
