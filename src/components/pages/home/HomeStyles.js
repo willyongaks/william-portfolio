@@ -19,3 +19,50 @@ export const MainContentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
 `;
+
+export const MainContentRow = styled.div`
+    display: flext;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: -15px;
+    margin-left: -15px;
+`;
+export const MainContentColumn = styled.div`
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media(min-width: 768px){
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+`;
+
+export const Header = styled.h1`
+    font-size: calc(var(--Large-font) + 9px);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        font-size: calc(var(--Large-font) + 6px);
+    }
+    @media screen and (max-width: 480px) {
+        font-size: calc(var(--Large-font) + 3px);
+    }
+`;
+
+export const SubHeader = styled.div`
+  font-size: var(--Medium-font);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+
+`;
+
+export const HeaderText = styled.p`
+  color: var(--text-color);
+`;
