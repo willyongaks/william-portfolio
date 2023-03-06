@@ -87,19 +87,8 @@ function Home() {
   return (
     <>
       <HomeContainer className='container'>
-        <LeftSide>
-          <SubHeader>Hi</SubHeader>
-          <Header>i'm William Ongaki</Header>
-          <HeaderText>
-            I am a frontend developer based in Oslo. <HeaderTextSpan>Read more</HeaderTextSpan>
-          </HeaderText>
-          <HeroButton>
-            <Link to='/about'>
-            see more</Link>
-          </HeroButton>
-        </LeftSide>
+        
       </HomeContainer>
-      
     </>
   );
 }
