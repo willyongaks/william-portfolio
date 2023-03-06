@@ -6,9 +6,13 @@
 
   /* Fonts */
 
-  --Large-font:37px;
+  --Large-font:52px;
   --medium-font:24px;
   --Small-font:16px;
+  --font-sm: 0.875em;
+  --font-md: 1.124em;
+  --font-x-md: 1.667em;
+  --font-x-lg: 3.275em;
 
 
   /* Font family */
@@ -37,4 +41,7 @@ body{
 
 .container{
   min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

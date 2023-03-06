@@ -43,11 +43,8 @@ export const Skills = styled.div`
   
 
   p {
-    background-color: var(--secondary-color);
     padding: 5px 20px;
     margin: 1em;
-    border-radius: 50px;
-    width: 150px;
     color: var(--text-color);
     text-align: center;
     animation: skills-carousel 30s linear infinite;
