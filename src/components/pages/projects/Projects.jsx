@@ -59,18 +59,7 @@ const TabContent = styled.div`
 
 function Projects() {
   return (
-      <ProjectWrapper>
-        <ProjectHeader>My recent projects</ProjectHeader>
-          <ProectRow>
-              <ProectColumn>
-                <TabContent>
-                    <Card />
-                    <Card />
-                </TabContent>
-                
-              </ProectColumn>  
-          </ProectRow>
-      </ProjectWrapper>
+      <Card />
   )
 }
 
