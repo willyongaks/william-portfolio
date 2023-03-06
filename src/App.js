@@ -4,6 +4,7 @@ import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
 import Contact from './components/pages/contact/Contact';
 import Menu from './components/navigation/Menu';
+import Projects from './components/pages/projects/Projects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Menu />
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/projects" exact element={<Projects />} />
           <Route path="/about"  element={ <About />}/>
           <Route path="/contact"  element={ <Contact /> }/>
         </Routes>

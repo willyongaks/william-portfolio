@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
 
 // STYLED COMPONENTS
@@ -10,15 +10,20 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   background-color: var(--primary-color);
   color: #fff;
-  padding: 50px 0px;
-  padding-right: 6rem;
-  padding-left: 6rem;
+  min-height: 0px;
+  padding-top: 2rem;
+  
   transition: all 0.5s ease 0s;
 `;
 
 const Logo = styled.p`
   font-family: var(--logo-font-w);
   font-size: var( --medium-font);
+
+  a{
+    text-decoration: none;
+    color: var(--text-color); 
+  }
 `;
 const LogoSpan = styled.span`
   color: var(--secondary-color);
@@ -143,12 +148,16 @@ function Menu() {
   }
 
   return(
-    <NavContainer>
+    <NavContainer className='container'>
         <Logo>
-          wo <LogoSpan>.</LogoSpan>
+          <Link to='/'>
+            wo <LogoSpan>.</LogoSpan>
+          </Link>
+          
         </Logo>
       <NavLinks>
         <NavLinkStyled exact='true' to='/'>Home</NavLinkStyled>
+        <NavLinkStyled exact='true' to='/projects'>Projects</NavLinkStyled>
         <NavLinkStyled to='/about' >About</NavLinkStyled>
         <NavLinkStyled to='/contact'>Contact</NavLinkStyled>
       </NavLinks>
@@ -160,6 +169,9 @@ function Menu() {
       <MobileMenu open={open}>
         <MobileNavLinkStyled exact='true' to='/' onClick={handleHumbergerClick}>
           Home
+        </MobileNavLinkStyled>
+        <MobileNavLinkStyled exact='true' to='/projects' onClick={handleHumbergerClick}>
+          Projects
         </MobileNavLinkStyled>
         <MobileNavLinkStyled exact='true' to='/about'onClick={handleHumbergerClick}>
           About
