@@ -1,23 +1,31 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const ProjectSection = styled.div`
-  width: 100%;
-  min-height: calc(100vh - 100px);
-  background: var();
-  padding-right: 15px;
+export const ProjectContainer = styled.div`
+    width: 100%;
+    padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 `;
 
+export const ProjectSection = styled.div`
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background: var();
+`;
+
 export const ProjectTitle = styled.h1`
   font-size: var(--header-1);
   color: var(--text-color);
+  
 `;
+
 
 export const Skills = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
   width: 100%;
   color: var(--text-color);
@@ -26,8 +34,36 @@ export const Skills = styled.div`
     background: var(--secondary-color2);
     padding: .45em 3pc;
     border-radius: 50px;
+    animation: skills-carousel 10s linear infinite;
   }
+
+  @keyframes skills-carousel {
+    0% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-25%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+     75% {
+      transform: translateX(-75%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+
+  
 `;
+export const TabContent = styled.div`
+    margin: 1.5em 0px;
+    column-gap: 1.5em;
+
+    @media only screen and (min-width: 1024px) {
+        column-count: 2;
+    }
+`; 
 
 export const ProjectItemImage = styled.div`
   display: block;
