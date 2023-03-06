@@ -65,3 +65,18 @@ export const SubHeader = styled.div`
 export const HeaderText = styled.p`
   color: var(--text-color);
 `;
+export const HeroButton = styled.a`
+  display: inline-block;
+  width: 30%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-align: center;
+
+  &:hover{
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
+  }
+`;

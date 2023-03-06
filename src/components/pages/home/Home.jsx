@@ -7,6 +7,7 @@ import {
   Header,
   SubHeader,
   HeaderText,
+  HeroButton,
 } from './HomeStyles';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -33,6 +34,9 @@ function Home() {
                     I am a frontend developer based in Oslo
                   </HeaderText>
                 </article>
+                <HeroButton href='/about'>
+                    see more
+                </HeroButton>
               </MainContentColumn>
             </MainContentRow>
           </Container>
