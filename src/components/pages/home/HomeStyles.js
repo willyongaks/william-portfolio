@@ -30,7 +30,7 @@ export const MainContentRow = styled.div`
 `;
 export const MainContentColumn = styled.div`
     position: relative;
-    width: 100%;
+    width: 100vw;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -44,7 +44,6 @@ export const Header = styled.h1`
     font-size: calc(var(--Large-font) + 9px);
     margin-bottom: 1rem;
     color: var(--text-color);
-    width: 100%;
 
     @media screen and (max-width: 768px) {
         font-size: calc(var(--Large-font) + 6px);

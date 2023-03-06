@@ -2,13 +2,13 @@ import React from 'react';
 import { 
   HomeContainer,
   MainContent,
-  MainContentContainer,
   MainContentRow,
   MainContentColumn,
   Header,
   SubHeader,
   HeaderText,
 } from './HomeStyles';
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
@@ -21,7 +21,7 @@ function Home() {
     <>
       <HomeContainer>
         <MainContent>
-          <MainContentContainer>
+          <Container>
             <MainContentRow>
               <MainContentColumn>
                 <article>
@@ -35,7 +35,7 @@ function Home() {
                 </article>
               </MainContentColumn>
             </MainContentRow>
-          </MainContentContainer>
+          </Container>
         </MainContent>
       </HomeContainer>
     </>
