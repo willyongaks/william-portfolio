@@ -3,11 +3,16 @@ import styled from 'styled-components';
 export const ProjectSection = styled.div`
   width: 100%;
   min-height: calc(100vh - 100px);
-  background: var(--main-bckgnd-color);
+  background: var();
+  padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 `;
 
 export const ProjectTitle = styled.h1`
   font-size: var(--header-1);
+  color: var(--text-color);
 `;
 
 export const Skills = styled.div`
@@ -15,6 +20,7 @@ export const Skills = styled.div`
   flex-wrap: wrap;
   gap: 1em;
   width: 100%;
+  color: var(--text-color);
 
   p {
     background: var(--secondary-color2);
@@ -43,6 +49,7 @@ export const ProjectItemDetails = styled.div`
 
 export const ProjectItemTitle = styled.h3`
   font-size: 1.3em;
+  color: var(--text-color);
 `;
 
 export const CategoryHolder = styled.div`
@@ -56,42 +63,3 @@ export const CategoryHolder = styled.div`
     font-weight: var(--font-weight-medium);
   }
 `;
-
-export const ContactOngaki = styled.div`
-  width: 100vw;
-  min-height:100vh;
-  color: var(--main-bckgnd-color);
-  text-align: center;
-  padding-top: 2em;
-  background: var(--secondary-color);
-`;
-
-export const ContactContainer = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
-
-export const ContactHeading = styled.div`
-  width: 80%;
-  margin: 0 auto;
-`;
-
-export const ContactTitle = styled.h1`
-  font-size: 2em;
-  width: 100%;
-  color: var(--secondary-color2);
-`;
-
-export const ContactSubTitle = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  letter-spacing: 0.02em;
-  font-size: 1em;
-  line-height: 1.3;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
