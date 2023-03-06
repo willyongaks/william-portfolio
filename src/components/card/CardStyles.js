@@ -1,16 +1,27 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+
+export const container = styled.div`
+    min-height: calc(100vh - 100px);
+`;
 
 export const ProjectContainer = styled.div`
     width: 100%;
+    
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    @media (min-width: 768px){
+        max-width: 720px;
+    }
+    @media (min-width: 576px){
+        max-width: 540px;
+    }
 `;
 
 export const ProjectSection = styled.div`
   width: 100%;
-  min-height: calc(100vh - 100px);
   background: var();
 `;
 
@@ -28,13 +39,26 @@ export const Skills = styled.div`
   align-items: center;
   gap: 1em;
   width: 100%;
-  color: var(--text-color);
+  
+  
 
   p {
-    background: var(--secondary-color2);
-    padding: .45em 3pc;
+    background-color: var(--secondary-color);
+    padding: 5px 20px;
+    margin: 1em;
     border-radius: 50px;
-    animation: skills-carousel 10s linear infinite;
+    width: 150px;
+    color: var(--text-color);
+    text-align: center;
+    animation: skills-carousel 30s linear infinite;
+
+    @media (min-width: 768px) {
+      padding: 10px 30px;
+      font-size: 18px;
+    }
+   
+
+    
   }
 
   @keyframes skills-carousel {

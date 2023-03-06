@@ -15,7 +15,7 @@ import { Container } from 'react-bootstrap';
 
 const Card = () => {
     return (
-        <Container>
+        <Container className='container'>
             <ProjectSection className='row align-items-center justify-content-center'>
                 <ProjectTitle>
                     <h1>Projects</h1>
@@ -32,6 +32,38 @@ const Card = () => {
                 <div className="container">
                     <div className="row">
                         <TabContent>
+                            <div className="project_item">
+                                <a href="#">
+                                    <ProjectItemImage>
+                                        <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                    </ProjectItemImage>
+                                </a>
+                                <ProjectItemDetails>
+                                    <ProjectItemTitle>Soshols</ProjectItemTitle>
+                                    <CategoryHolder>
+                                        <div className="category">
+                                            <a href="#">Web Development</a>
+                                        </div>
+                                    </CategoryHolder>
+                                </ProjectItemDetails>
+                            </div>
+
+                            <div className="project_item">
+                                <a href="#">
+                                    <ProjectItemImage>
+                                        <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                    </ProjectItemImage>
+                                </a>
+                                <ProjectItemDetails>
+                                    <ProjectItemTitle>Soshols</ProjectItemTitle>
+                                    <CategoryHolder>
+                                        <div className="category">
+                                            <a href="#">Web Development</a>
+                                        </div>
+                                    </CategoryHolder>
+                                </ProjectItemDetails>
+                            </div>
+
                             <div className="project_item">
                                 <a href="#">
                                     <ProjectItemImage>

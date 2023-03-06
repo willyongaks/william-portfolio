@@ -20,20 +20,6 @@ const ProjectWrapper = styled.section`
     }
 `;
 
-const ProjectHeader = styled.h1`
-    color: var(--text-color);
-    text-align: center;
-`;
-
-const ProectRow = styled.div`
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-`;
-
 const ProectColumn = styled.div`
     position: relative;
     max-width: 80%;
@@ -45,15 +31,6 @@ const ProectColumn = styled.div`
         max-width: 83.333333%;
     }
 `;
-
-const TabContent = styled.div`
-    margin: 1.5em 0px;
-    column-gap: 1.5em;
-
-    @media only screen and (min-width: 1024px) {
-        column-count: 2;
-    }
-`; 
 
 
 
