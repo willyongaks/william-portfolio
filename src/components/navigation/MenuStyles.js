@@ -9,9 +9,7 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   background-color: var(--primary-color);
   color: #fff;
-  height: 0px;
-  padding-top: 2rem;
-  
+  padding: 50px 0px;
   transition: all 0.5s ease 0s;
 `;
 
