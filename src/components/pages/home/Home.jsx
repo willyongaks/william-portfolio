@@ -51,8 +51,8 @@ function Home() {
                   </span>
                   
                 </SlillsDisplay>
-                <HeroButton href='/about'>
-                    see more <BsArrowRight />
+                <HeroButton href='/projects'>
+                    see more projects <BsArrowRight />
                 </HeroButton>
               </MainContentColumn>
             </MainContentRow>

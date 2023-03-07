@@ -32,7 +32,6 @@ function Menu() {
       <NavLinks>
         <NavLinkStyled exact='true' to='/'>Home</NavLinkStyled>
         <NavLinkStyled exact='true' to='/projects'>Projects</NavLinkStyled>
-        <NavLinkStyled to='/about' >About</NavLinkStyled>
         <NavLinkStyled to='/contact'>Contact</NavLinkStyled>
       </NavLinks>
       <Humberger onClick={handleHumbergerClick}>
@@ -46,9 +45,6 @@ function Menu() {
         </MobileNavLinkStyled>
         <MobileNavLinkStyled exact='true' to='/projects' onClick={handleHumbergerClick}>
           Projects
-        </MobileNavLinkStyled>
-        <MobileNavLinkStyled exact='true' to='/about'onClick={handleHumbergerClick}>
-          About
         </MobileNavLinkStyled>
         <MobileNavLinkStyled exact='true' to='/contact' onClick={handleHumbergerClick}>
           Contact
