@@ -59,7 +59,7 @@ const Card = () => {
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
-                                        <a href="#"> <AiFillGithub/> Repository</a>
+                                        <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
                                         <a href="#"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
