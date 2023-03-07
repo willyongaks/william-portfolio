@@ -152,9 +152,11 @@ export const SlillsDisplay = styled.div`
         p{
             background-color: var( --blured-secondary-color); 
             padding: 0px 5px; 
+            
         }
         
     }
+
 `;
 
 const move = keyframes`
