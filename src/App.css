@@ -1,8 +1,9 @@
 :root{
   /* Colors */
-  --primary-color:#000000;
+  --primary-color:#000000fc;
   --secondary-color:#FF9101;
-  --blured-secondary-color: #ff9101e2;
+  --blured-secondary-color: rgba(136, 136, 136, 0.22);
+  --blured-text-color: rgba(255, 255, 255, 0.702);
   --text-color:#FFFFFF;
 
   /* Fonts */

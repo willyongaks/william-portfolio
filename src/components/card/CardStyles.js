@@ -109,13 +109,25 @@ export const ProjectItemTitle = styled.h3`
 `;
 
 export const CategoryHolder = styled.div`
-  .category a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.534);
-  }
-
-  .category {
+    display: flex;
+    justify-content: space-evenly;
     font-size: .94em;
     font-weight: var(--font-weight-medium);
+    transition: opacity 0.3s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    
+
+    &:hover{
+      color: var(--secondary-color);
+    }
   }
+
+
+ 
 `;

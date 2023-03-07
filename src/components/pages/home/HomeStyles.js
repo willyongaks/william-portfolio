@@ -150,7 +150,8 @@ export const SlillsDisplay = styled.div`
         gap:1em;
         
         p{
-            background-color: var( --blured-secondary-color); 
+            background-color: var(--blured-secondary-color);
+            color: var(--blured-text-color);
             padding: 0px 5px; 
 
         }

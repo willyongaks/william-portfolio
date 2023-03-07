@@ -2,7 +2,6 @@ import React from 'react';
 import {
     ProjectSection,
     ProjectTitle,
-    Skills,
     TabContent,
     ProjectItemImage,
     ProjectItemImageImg,
@@ -12,6 +11,8 @@ import {
 } from './CardStyles';
 import soshols from '../assets/soshols.png';
 import { Container } from 'react-bootstrap';
+import { AiFillGithub } from "react-icons/ai";
+import { BiRightArrow } from "react-icons/bi";
 
 const Card = () => {
     return (
@@ -20,15 +21,6 @@ const Card = () => {
                 <ProjectTitle>
                     <h1>Projects</h1>
                 </ProjectTitle>
-                <Skills>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>React</p>
-                    <p>Bootstrap</p>
-                    <p>Typescript</p>
-                </Skills>
-
                 <div className="container">
                     <div className="row">
                         <TabContent>
@@ -41,9 +33,8 @@ const Card = () => {
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
-                                        <div className="category">
-                                            <a href="#">Web Development</a>
-                                        </div>
+                                        <a href="#"> <AiFillGithub/> Repository</a>
+                                        <a href="#"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
                             </div>
@@ -57,9 +48,8 @@ const Card = () => {
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
-                                        <div className="category">
-                                            <a href="#">Web Development</a>
-                                        </div>
+                                        <a href="#"> <AiFillGithub/> Repository</a>
+                                        <a href="#"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
                             </div>
@@ -73,9 +63,8 @@ const Card = () => {
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
-                                        <div className="category">
-                                            <a href="#">Web Development</a>
-                                        </div>
+                                        <a href="#"> <AiFillGithub/> Repository</a>
+                                        <a href="#"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
                             </div>
@@ -89,9 +78,8 @@ const Card = () => {
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
-                                        <div className="category">
-                                            <a href="#">Web Development</a>
-                                        </div>
+                                        <a href="#"> <AiFillGithub/> Repository</a>
+                                        <a href="#"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
                             </div>

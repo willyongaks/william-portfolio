@@ -7,7 +7,6 @@ export const NavContainer = styled.nav`
   display:flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
   color: #fff;
   padding: 50px 0px;
   transition: all 0.5s ease 0s;
