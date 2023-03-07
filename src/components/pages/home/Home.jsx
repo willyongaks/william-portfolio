@@ -12,8 +12,10 @@ import {
 } from './HomeStyles';
 import { Container } from 'react-bootstrap';
 import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { BsArrowRight } from "react-icons/bs";
+import { DiReact } from "react-icons/di";
 
 
 
@@ -46,8 +48,8 @@ function Home() {
                   <span>
                     <p><IoLogoJavascript />Javascript</p>
                     <p> <IoLogoHtml5/> HTML</p>
-                    <p>CSS</p>
-                    <p>React</p>
+                    <p><IoLogoCss3/> CSS</p>
+                    <p><DiReact /> React</p>
                   </span>
                   
                 </SlillsDisplay>
