@@ -138,6 +138,7 @@ export const HeaderText = styled.p`
 
 export const SlillsDisplay = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 
     p{
