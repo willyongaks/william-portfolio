@@ -51,6 +51,24 @@ export const Header = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: calc(var(--Large-font) + 3px);
     }
+
+    &::before{
+        content: '<h1>';
+        align-self: flex-end;
+        font-size: 12px;
+
+        @media (min-width: 942px) {
+            padding: 2.1rem 1rem 0 0;
+        }
+    }
+    &::after{
+        content: '<h1>';
+        font-size: 12px;
+
+        @media (min-width: 942px) {
+            padding: 0 0 1.8rem 1rem;
+        }
+    }
 `;
 
 export const SubHeader = styled.div`
@@ -60,10 +78,47 @@ export const SubHeader = styled.div`
   margin-bottom: 1rem;
   color: var(--text-color);
 
+
+  &::before{
+        content: '<p>';
+        align-self: flex-end;
+        font-size: 12px;
+
+        @media (min-width: 942px) {
+            padding: 2.1rem 1rem 0 0;
+        }
+    }
+    &::after{
+        content: '<p>';
+        font-size: 12px;
+
+        @media (min-width: 942px) {
+            padding: 0 0 1.8rem 1rem;
+        }
+    }
+
 `;
 
 export const HeaderText = styled.p`
   color: var(--text-color);
+
+  &::before{
+        content: '<p>';
+        align-self: flex-end;
+        font-size: 12px;
+
+        @media (min-width: 942px) {
+            padding: 2.1rem 1rem 0 0;
+        }
+    }
+    &::after{
+        content: '<p>';
+        font-size: 12px;
+
+        @media (min-width: 942px) {
+            padding: 0 0 1.8rem 1rem;
+        }
+    }
 `;
 export const HeroButton = styled.a`
   display: inline-block;
