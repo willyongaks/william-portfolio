@@ -2,6 +2,7 @@
   /* Colors */
   --primary-color:#000000;
   --secondary-color:#FF9101;
+  --blured-secondary-color: #ff9101c3;
   --text-color:#FFFFFF;
 
   /* Fonts */
@@ -16,7 +17,8 @@
 
 
   /* Font family */
-
+  --main-font:'Noto Sans', sans-serif;;
+  --header-font:'Rampart One', cursive;;
   --logo-font-w:'Climate Crisis', cursive;
   --logo-font-o:'Playfair Display', serif;
 
@@ -29,6 +31,7 @@
 
 body{
   background-color: var(--primary-color);
+  font-family: var(--main-font);
 
 }
 
@@ -37,4 +40,7 @@ body{
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+.div{
+  color: #ff9101bd;
 }

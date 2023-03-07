@@ -8,10 +8,12 @@ import {
   SubHeader,
   HeaderText,
   HeroButton,
+  SlillsDisplay,
 } from './HomeStyles';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
+import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoHtml5 } from "react-icons/io5";
+import { BsArrowRight } from "react-icons/bs";
 
 
 
@@ -28,7 +30,7 @@ function Home() {
                 <article>
                   <SubHeader>Hi</SubHeader>
                   <Header>
-                    i'm William Ongaki
+                    I'm William Ongaki
                   </Header>
                   <HeaderText>
                     I am a frontend developer based in Oslo with a passion for creating user-friendly
@@ -39,8 +41,18 @@ function Home() {
                     new projects and challenges.
                   </HeaderText>
                 </article>
+                <SlillsDisplay>
+                  <p>Over the years, I have acquired a range of skills in web development, including</p>
+                  <span>
+                    <p><IoLogoJavascript />Javascript</p>
+                    <p> <IoLogoHtml5/> HTML</p>
+                    <p>CSS</p>
+                    <p>React</p>
+                  </span>
+                  
+                </SlillsDisplay>
                 <HeroButton href='/about'>
-                    see more
+                    see more <BsArrowRight />
                 </HeroButton>
               </MainContentColumn>
             </MainContentRow>

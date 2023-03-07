@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -40,8 +40,10 @@ export const MainContentColumn = styled.div`
     }
 `;
 
+
 export const Header = styled.h1`
     font-size: calc(var(--Large-font) + 9px);
+    font-family: 'Rampart One', cursive;
     margin-bottom: 1rem;
     color: var(--text-color);
 
@@ -51,11 +53,13 @@ export const Header = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: calc(var(--Large-font) + 3px);
     }
+    
 
     &::before{
         content: '<h1>';
         align-self: flex-end;
         font-size: 12px;
+        font-family: var(--main-font);
 
         @media (min-width: 942px) {
             padding: 2.1rem 1rem 0 0;
@@ -64,11 +68,22 @@ export const Header = styled.h1`
     &::after{
         content: '<h1>';
         font-size: 12px;
+        left: -2px;
+        font-family: var(--main-font);
 
         @media (min-width: 942px) {
             padding: 0 0 1.8rem 1rem;
         }
     }
+`;
+
+export const Block = styled.span`
+    width: 0%;
+    height: inherit;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+    display: flex;
 `;
 
 export const SubHeader = styled.div`
@@ -120,12 +135,40 @@ export const HeaderText = styled.p`
         }
     }
 `;
+
+export const SlillsDisplay = styled.div`
+    display: flex;
+    gap: 1em;
+
+    p{
+        color: var(--text-color);     
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        gap:1em;
+        
+        p{
+            background-color: var( --blured-secondary-color); 
+            padding: 0px 5px; 
+        }
+        
+    }
+`;
+
+const move = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+`;
 export const HeroButton = styled.a`
   display: inline-block;
-  width: 30%;
   padding: 12px;
   background: transparent;
-  border: 1px solid var(--secondary-color);
+  border: none;
   text-decoration: none;
   color: var(--secondary-color);
   text-align: center;
@@ -133,5 +176,10 @@ export const HeroButton = styled.a`
   &:hover{
       color: var(--primary-color);
       background-color: var(--secondary-color);
+  }
+
+  svg {
+    margin-left: 1rem;
+    animation: ${move} 0.5s alternate infinite;
   }
 `;
