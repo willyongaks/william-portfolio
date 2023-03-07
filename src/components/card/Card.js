@@ -25,11 +25,9 @@ const Card = () => {
                     <div className="row">
                         <TabContent>
                             <div className="project_item">
-                                <a href="#">
-                                    <ProjectItemImage>
-                                        <ProjectItemImageImg src={soshols} alt="Soshols" />
-                                    </ProjectItemImage>
-                                </a>
+                                <ProjectItemImage>
+                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                </ProjectItemImage>
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
@@ -40,11 +38,9 @@ const Card = () => {
                             </div>
 
                             <div className="project_item">
-                                <a href="#">
-                                    <ProjectItemImage>
-                                        <ProjectItemImageImg src={soshols} alt="Soshols" />
-                                    </ProjectItemImage>
-                                </a>
+                                <ProjectItemImage>
+                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                </ProjectItemImage>
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
@@ -55,11 +51,10 @@ const Card = () => {
                             </div>
 
                             <div className="project_item">
-                                <a href="#">
-                                    <ProjectItemImage>
-                                        <ProjectItemImageImg src={soshols} alt="Soshols" />
-                                    </ProjectItemImage>
-                                </a>
+                                <ProjectItemImage>
+                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                </ProjectItemImage>
+                                
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
@@ -70,11 +65,10 @@ const Card = () => {
                             </div>
 
                             <div className="project_item">
-                                <a href="#">
-                                    <ProjectItemImage>
-                                        <ProjectItemImageImg src={soshols} alt="Soshols" />
-                                    </ProjectItemImage>
-                                </a>
+                                <ProjectItemImage>
+                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                </ProjectItemImage>
+                            
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
