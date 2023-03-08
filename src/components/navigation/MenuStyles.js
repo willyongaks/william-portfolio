@@ -100,7 +100,8 @@ export const MobileNavLinkStyled = styled(NavLink)`
   transition: background-color 0.2 ease-out;
 
   &:hover{
-    background-color: #555;
+    background-color: var(--blured-secondary-color);
+    color: var(--secondary-color);
   }
 
   &.active {
