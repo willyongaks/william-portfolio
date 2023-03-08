@@ -6,6 +6,9 @@ export const HomeContainer = styled.div`
   align-items: center;
   min-height: calc(60vh);
   
+   @media (max-width: 600px) {
+       min-height: calc(70vh);
+   }
 `;
 
 export const MainContent = styled.section`
@@ -30,7 +33,7 @@ export const MainContentRow = styled.div`
 `;
 export const MainContentColumn = styled.div`
     position: relative;
-    width: 100vw;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -176,6 +179,7 @@ export const HeroButton = styled.a`
   text-decoration: none;
   color: var(--secondary-color);
   text-align: center;
+  margin-bottom: 3em;
 
   &:hover{
       color: var(--primary-color);
