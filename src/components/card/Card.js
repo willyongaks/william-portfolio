@@ -11,6 +11,7 @@ import {
 } from './CardStyles';
 import soshols from '../assets/soshols.png';
 import shuzy from '../assets/shuzy.png';
+import gameset from '../assets/gameset.png';
 import { Container } from 'react-bootstrap';
 import { AiFillGithub } from "react-icons/ai";
 import { BiRightArrow } from "react-icons/bi";
@@ -53,11 +54,11 @@ const Card = () => {
 
                             <div className="project_item">
                                 <ProjectItemImage>
-                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                    <ProjectItemImageImg src={gameset} alt="Soshols" />
                                 </ProjectItemImage>
                                 
                                 <ProjectItemDetails>
-                                    <ProjectItemTitle>Soshols</ProjectItemTitle>
+                                    <ProjectItemTitle>Gameset</ProjectItemTitle>
                                     <CategoryHolder>
                                         <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
                                         <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <BiRightArrow /> Live Demo</a>
