@@ -83,7 +83,7 @@ export const MobileMenu = styled.div`
   right: 0;
   width: 50%;
   height: 100%;
-  padding: 1rem;
+  
   z-index: 10000;
   transition: all 400ms cubic-bezier(0.6, 0.05, 0.28, 0.91) 0s;
 
