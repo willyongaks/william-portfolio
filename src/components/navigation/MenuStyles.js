@@ -76,15 +76,18 @@ export const HumbergerIcon = styled.span`
 export const MobileMenu = styled.div`
   display: none;
   flex-direction: column;
-  background-color: #333;
+  background-color: var(--primary-color);
   color: var(--text-color);
   position: absolute;
   top: 100px;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 45%;
+  height: 100%;
   padding: 1rem;
   z-index: 10000;
+  transition: all 400ms cubic-bezier(0.6, 0.05, 0.28, 0.91) 0s;
 
+  
   @media screen and (max-width: 768px) {
     display: ${({ open }) => (open ? 'flex' : 'none')};
   }
@@ -102,7 +105,7 @@ export const MobileNavLinkStyled = styled(NavLink)`
 
   &.active {
     color: var(--secondary-color);
-    background-color: #555;
+    background-color: var(--blured-secondary-color);
   }
 `;
 
