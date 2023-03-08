@@ -22,7 +22,11 @@ export const ArticleText = styled.p`
 `;
 
 export const FormContainer = styled.form`
-  width: 100%;
+    width: 60%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const FormFields = styled.div`
@@ -32,21 +36,6 @@ export const FormFields = styled.div`
     gap: 2rem;
 `;
 
-export const FormControl = styled.label`
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-`;
 
 export const FormInput = styled.input`
     background: transparent;
@@ -56,9 +45,12 @@ export const FormInput = styled.input`
     height: calc(1.5em + 0.75rem + 2px);
     padding: 24px 21px !important;
     border: 1px solid var(--secondary-color);
+    border-radius: 0.25rem;
     box-shadow: none !important;
     outline: none;
     width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
    
 `;
 

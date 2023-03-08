@@ -15,8 +15,8 @@ function Contact() {
   return (
     <MainContent>
       <Container>
-        <Row className='row align-items-center justify-content-center'>
-          <Col className='col-md-10'>
+        <Row>
+          <Col>
           <ContactHeading>Contact</ContactHeading>
           <article>
             <ArticleText>
