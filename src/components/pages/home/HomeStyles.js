@@ -48,10 +48,10 @@ export const Header = styled.h1`
     color: var(--text-color);
 
     @media screen and (max-width: 768px) {
-        font-size: calc(var(--Large-font) + 6px);
+        font-size: calc(var(--Large-font) + 3px);
     }
     @media screen and (max-width: 480px) {
-        font-size: calc(var(--Large-font) + 3px);
+        font-size: calc(var(--Large-font) - 6px);
     }
     
 

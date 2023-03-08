@@ -10,6 +10,10 @@ export const NavContainer = styled.nav`
   color: #fff;
   padding: 50px 0px;
   transition: all 0.5s ease 0s;
+
+  @media (max-width: 768px) {
+    padding: 50px 30px;
+  }
 `;
 
 export const Logo = styled.p`
@@ -39,6 +43,7 @@ export const Humberger = styled.div`
   width: 32px; // can be overwritten by button css
   height: 32px; // can be overwritten by button css
   position: relative;
+  z-index: 10000;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -53,6 +58,7 @@ export const HumbergerIcon = styled.span`
   margin: 5px;
   transition: transform 0.2s ease-out;
   transform: translate(-50%, -50%);
+  z-index: 10000;
 
   &:first-child {
     transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
@@ -77,6 +83,7 @@ export const MobileMenu = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem;
+  z-index: 10000;
 
   @media screen and (max-width: 768px) {
     display: ${({ open }) => (open ? 'flex' : 'none')};

@@ -6,17 +6,17 @@ import {
   ArticleText,
   FormContainer,
   FormFields,
-  FormControl,
   FormInput,
   FormTextarea,
+  SendButton,
 } from './ContactStyles';
 
 function Contact() {
   return (
     <MainContent>
       <Container>
-        <Row>
-          <Col>
+        <Row className='row align-items-center justify-content-center'>
+          <Col className='col-md-10'>
           <ContactHeading>Contact</ContactHeading>
           <article>
             <ArticleText>
@@ -48,6 +48,7 @@ function Contact() {
               />
             </FormFields>
           </FormContainer>
+          <SendButton> Send message</SendButton>
           </Col>
         </Row>
       </Container>
