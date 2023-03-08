@@ -60,7 +60,7 @@ const Card = () => {
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
                                         <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
-                                        <a href="#"> <BiRightArrow /> Live Demo</a>
+                                        <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
                             </div>
@@ -73,8 +73,8 @@ const Card = () => {
                                 <ProjectItemDetails>
                                     <ProjectItemTitle>Soshols</ProjectItemTitle>
                                     <CategoryHolder>
-                                        <a href="#"> <AiFillGithub/> Repository</a>
-                                        <a href="#"> <BiRightArrow /> Live Demo</a>
+                                        <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
+                                        <a href="https://rad-beijinho-aa0e53.netlify.app"> <BiRightArrow /> Live Demo</a>
                                     </CategoryHolder>
                                 </ProjectItemDetails>
                             </div>
