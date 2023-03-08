@@ -68,11 +68,11 @@ const Card = () => {
 
                             <div className="project_item">
                                 <ProjectItemImage>
-                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
+                                    <ProjectItemImageImg src={gameset} alt="Soshols" />
                                 </ProjectItemImage>
                             
                                 <ProjectItemDetails>
-                                    <ProjectItemTitle>Soshols</ProjectItemTitle>
+                                    <ProjectItemTitle>Gameset</ProjectItemTitle>
                                     <CategoryHolder>
                                         <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
                                         <a href="https://rad-beijinho-aa0e53.netlify.app"> <BiRightArrow /> Live Demo</a>
