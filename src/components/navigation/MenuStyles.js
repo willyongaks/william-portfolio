@@ -40,10 +40,10 @@ export const NavLinks = styled.div`
 export const Humberger = styled.div`
   display: none;
   cursor: pointer;
-  width: 32px; // can be overwritten by button css
-  height: 32px; // can be overwritten by button css
+  width: 32px; 
+  height: 32px;
   position: relative;
-  z-index: 10000;
+  z-index: 5;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -52,16 +52,16 @@ export const Humberger = styled.div`
 
 export const HumbergerIcon = styled.span`
   display:block;
-  width: 30px;
-  height: 3px;
+  width: 2.3rem;
+  height: 0.15rem;
   background-color: var(--text-color);
   margin: 5px;
-  transition: transform 0.2s ease-out;
-  transform: translate(-50%, -50%);
+  transition: transform 300ms cubic-bezier(0.6, 0.05, 0.28, 0.91) 0s, opacity 300ms ease 0s, box-shadow 250ms ease 0s, background-color 300ms ease 0s;
+ 
   z-index: 10000;
 
   &:first-child {
-    transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+    transform: ${({ open }) => (open ? 'rotate(45deg) translateY(0.555rem)' : 'rotate(0)')};
   }
 
   &:nth-child(2) {
@@ -69,7 +69,7 @@ export const HumbergerIcon = styled.span`
     opacity:${({ open }) => (open ? 0 : 1)};
   }
   &:nth-child(3) {
-    transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+    transform: ${({ open }) => (open ? 'rotate(-45deg) translateY(-0.555rem)' : 'rotate(0)')};
   }
 `;
 
@@ -79,7 +79,7 @@ export const MobileMenu = styled.div`
   background-color: #333;
   color: var(--text-color);
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 0;
   width: 100%;
   padding: 1rem;
