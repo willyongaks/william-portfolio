@@ -45,7 +45,7 @@ const Card = () => {
              <GridCardImageContainer>
                  <GridCardImage src={shuzy} alt="Soshols"/>
                  <GridCardText>
-                     <CardTextTitle>shuzy</CardTextTitle>
+                     <CardTextTitle>Shuzy</CardTextTitle>
                      <CardTextParagraph>I developed an e-commerce shoe store web application that provides a seamless shopping experience with a vast selection of high-quality shoes, filtering options, and secure checkout.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
