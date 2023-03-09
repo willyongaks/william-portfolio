@@ -103,7 +103,7 @@ const Card = () => {
                  <GridCardImage src={KenyaSafari} alt="Soshols"/>
                  <GridCardText>
                      <CardTextTitle>Kenya safari</CardTextTitle>
-                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                     <CardTextParagraph>My web blog application showcases my safari trip to Kenya, featuring photos, stories, and recommendations for future travelers. The app offers a personalized experience for users interested in African wildlife and culture.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
