@@ -14,6 +14,7 @@ import soshols from '../assets/soshols.png';
 import shuzy from '../assets/shuzy.png';
 import Rainydays from '../assets/Rainydays.png';
 import gameset from '../assets/gameset.png';
+import KenyaSafari from '../assets/kenyaSafari.png';
 import { AiFillGithub } from "react-icons/ai";
 import { BiRightArrow } from "react-icons/bi";
 
@@ -99,17 +100,17 @@ const Card = () => {
          {/* card 5 */}
          <GridCard>
              <GridCardImageContainer>
-                 <GridCardImage src={gameset} alt="Soshols"/>
+                 <GridCardImage src={KenyaSafari} alt="Soshols"/>
                  <GridCardText>
-                     <CardTextTitle>Gameset</CardTextTitle>
+                     <CardTextTitle>Kenya safari</CardTextTitle>
                      <CardTextParagraph>This is a project from school</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
-                     href="https://github.com/willyongaks/course-assignment-jsframework-ongaki">
+                     href="https://github.com/willyongaks/kenyan-Safari_Blog">
                      <AiFillGithub/>Repository</CardLinksItems>
                      <CardLinksItems
-                     href="https://github.com/willyongaks/course-assignment-jsframework-ongaki">
+                     href="https://upbeat-kare-14d099.netlify.app/">
                      <BiRightArrow/>Live</CardLinksItems>
                  </CardLinks>
              </GridCardImageContainer>
