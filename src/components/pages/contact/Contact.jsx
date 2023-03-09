@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { 
   MainContent,
@@ -9,9 +9,44 @@ import {
   FormInput,
   FormTextarea,
   SendButton,
+  Message,
 } from './ContactStyles';
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      message,
+    }
+
+    fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then((res) => {
+      if (res.status === 200) {
+        setStatus('success');
+        setName('');
+        setEmail('');
+        setMessage('');
+      }else{
+        setStatus('error')
+      }
+    })
+    .catch((error) => {
+      setStatus('error')
+    })
+  }
   return (
     <MainContent>
       <Container>
@@ -31,24 +66,39 @@ function Contact() {
                 name="name"
                 placeholder=" Name"
                 className='FromControl'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
               />
               <FormInput 
                 type="email"
                 name="email"
                 placeholder=" Email"
                 className='FromControl'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <FormTextarea 
                 name="message"
                 placeholder=" Message"
                 aria-required="true"
                 rows={5}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
 
               />
             </FormFields>
           </FormContainer>
-          <SendButton> Send message</SendButton>
+          {status === 'success' ? (
+            <Message>Message sent successfully!</Message>
+          ): status === 'error' ? (
+            <Message>Message sent unsuccessfully, please try again later</Message>
+          ): null}
+          <SendButton
+            type='submit'
+            onClick={handleSubmit}
+          > Send message</SendButton>
           </Col>
         </Row>
       </Container>

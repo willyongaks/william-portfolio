@@ -70,6 +70,23 @@ export const FormTextarea = styled.textarea`
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   
 `;
+export const Message = styled.p`
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+
+  &.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+  &.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+`;
 
 export const SendButton = styled.button`
     font-size: calc(var(--extra-small-font) + 1.1px);
