@@ -27,7 +27,7 @@ const Card = () => {
                  <GridCardImage src={soshols} alt="Soshols"/>
                  <GridCardText>
                      <CardTextTitle>Soshols</CardTextTitle>
-                     <CardTextParagraph>A social media app that allows uers to post images,comment,like and upload an avater and banner to their profile. This was my own idea from naming of the website to design.</CardTextParagraph>
+                     <CardTextParagraph>I developed a social media app with image posting, commenting, liking, and profile customization options, from website naming to design, as my personal project.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
@@ -46,7 +46,7 @@ const Card = () => {
                  <GridCardImage src={shuzy} alt="Soshols"/>
                  <GridCardText>
                      <CardTextTitle>shuzy</CardTextTitle>
-                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                     <CardTextParagraph>I developed an e-commerce shoe store web application that provides a seamless shopping experience with a vast selection of high-quality shoes, filtering options, and secure checkout.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
