@@ -65,7 +65,7 @@ const Card = () => {
                  <GridCardImage src={gameset} alt="Soshols"/>
                  <GridCardText>
                      <CardTextTitle>Gameset</CardTextTitle>
-                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                     <CardTextParagraph>I created a web application utilizing open-source APIs to build a comprehensive game database. The app features game information, reviews, ratings, and recommendations for gaming enthusiasts.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
