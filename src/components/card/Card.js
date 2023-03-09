@@ -1,89 +1,80 @@
 import React from 'react';
 import {
-    ProjectSection,
-    ProjectTitle,
-    TabContent,
-    ProjectItemImage,
-    ProjectItemImageImg,
-    ProjectItemDetails,
-    ProjectItemTitle,
-    CategoryHolder,
+    CardGridContainer,
+    GridCard,
+    GridCardImageContainer,
+    GridCardImage,
+    GridCardText,
+    CardTextTitle,
+    CardTextParagraph,
+    CardLinks,
+    CardLinksItems,
 } from './CardStyles';
 import soshols from '../assets/soshols.png';
 import shuzy from '../assets/shuzy.png';
 import gameset from '../assets/gameset.png';
-import { Container } from 'react-bootstrap';
 import { AiFillGithub } from "react-icons/ai";
 import { BiRightArrow } from "react-icons/bi";
 
 const Card = () => {
     return (
-        <Container className='container'>
-            <ProjectSection className='row align-items-center justify-content-center'>
-                <ProjectTitle>
-                    <h1>Projects</h1>
-                </ProjectTitle>
-                <div className="container">
-                    <div className="row">
-                        <TabContent>
-                            <div className="project_item">
-                                <ProjectItemImage>
-                                    <ProjectItemImageImg src={soshols} alt="Soshols" />
-                                </ProjectItemImage>
-                                <ProjectItemDetails>
-                                    <ProjectItemTitle>Soshols</ProjectItemTitle>
-                                    <CategoryHolder>
-                                        <a href="https://github.com/willyongaks/social-media"> <AiFillGithub/> Repository</a>
-                                        <a href="https://frabjous-starburst-8fb180.netlify.app"> <BiRightArrow /> Live Demo</a>
-                                    </CategoryHolder>
-                                </ProjectItemDetails>
-                            </div>
+     <CardGridContainer>
+         <GridCard>
+             <GridCardImageContainer>
+                 <GridCardImage src={soshols} alt="Soshols"/>
+                 <GridCardText>
+                     <CardTextTitle>Soshols</CardTextTitle>
+                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                 </GridCardText>
+                 <CardLinks>
+                     <CardLinksItems
+                     href="https://github.com/willyongaks/social-media">
+                     <AiFillGithub/>Repository</CardLinksItems>
+                     <CardLinksItems
+                     href="https://frabjous-starburst-8fb180.netlify.app">
+                     <BiRightArrow/>Live</CardLinksItems>
+                 </CardLinks>
+             </GridCardImageContainer>
+         </GridCard>
 
-                            <div className="project_item">
-                                <ProjectItemImage>
-                                    <ProjectItemImageImg src={shuzy} alt="Soshols" />
-                                </ProjectItemImage>
-                                <ProjectItemDetails>
-                                    <ProjectItemTitle>Soshols</ProjectItemTitle>
-                                    <CategoryHolder>
-                                        <a href="https://github.com/willyongaks/william-ongaki-semester-project-2"> <AiFillGithub/> Repository</a>
-                                        <a href="https://glowing-alfajores-e68984.netlify.app/"> <BiRightArrow /> Live Demo</a>
-                                    </CategoryHolder>
-                                </ProjectItemDetails>
-                            </div>
+         {/* card 2 */}
+         <GridCard>
+             <GridCardImageContainer>
+                 <GridCardImage src={shuzy} alt="Soshols"/>
+                 <GridCardText>
+                     <CardTextTitle>shuzy</CardTextTitle>
+                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                 </GridCardText>
+                 <CardLinks>
+                     <CardLinksItems
+                     href="https://github.com/willyongaks/william-ongaki-semester-project-2">
+                     <AiFillGithub/>Repository</CardLinksItems>
+                     <CardLinksItems
+                     href="https://glowing-alfajores-e68984.netlify.app/">
+                     <BiRightArrow/>Live</CardLinksItems>
+                 </CardLinks>
+             </GridCardImageContainer>
+         </GridCard>
 
-                            <div className="project_item">
-                                <ProjectItemImage>
-                                    <ProjectItemImageImg src={gameset} alt="Soshols" />
-                                </ProjectItemImage>
-                                
-                                <ProjectItemDetails>
-                                    <ProjectItemTitle>Gameset</ProjectItemTitle>
-                                    <CategoryHolder>
-                                        <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
-                                        <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <BiRightArrow /> Live Demo</a>
-                                    </CategoryHolder>
-                                </ProjectItemDetails>
-                            </div>
-
-                            <div className="project_item">
-                                <ProjectItemImage>
-                                    <ProjectItemImageImg src={gameset} alt="Soshols" />
-                                </ProjectItemImage>
-                            
-                                <ProjectItemDetails>
-                                    <ProjectItemTitle>Gameset</ProjectItemTitle>
-                                    <CategoryHolder>
-                                        <a href="https://github.com/willyongaks/course-assignment-jsframework-ongaki"> <AiFillGithub/> Repository</a>
-                                        <a href="https://rad-beijinho-aa0e53.netlify.app"> <BiRightArrow /> Live Demo</a>
-                                    </CategoryHolder>
-                                </ProjectItemDetails>
-                            </div>
-                        </TabContent>
-                    </div>
-                </div>
-            </ProjectSection>
-        </Container>
+         {/* Card 3 */}
+         <GridCard>
+             <GridCardImageContainer>
+                 <GridCardImage src={gameset} alt="Soshols"/>
+                 <GridCardText>
+                     <CardTextTitle>Gameset</CardTextTitle>
+                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                 </GridCardText>
+                 <CardLinks>
+                     <CardLinksItems
+                     href="https://github.com/willyongaks/course-assignment-jsframework-ongaki">
+                     <AiFillGithub/>Repository</CardLinksItems>
+                     <CardLinksItems
+                     href="https://github.com/willyongaks/course-assignment-jsframework-ongaki">
+                     <BiRightArrow/>Live</CardLinksItems>
+                 </CardLinks>
+             </GridCardImageContainer>
+         </GridCard>
+     </CardGridContainer>
     );
 };
 

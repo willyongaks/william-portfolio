@@ -1,134 +1,84 @@
 import styled from 'styled-components';
 
-export const container = styled.div`
-    min-height: calc(100vh - 100px);
+export const CardGridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  row-gap: 2rem;
+  align-items: stretch;
+  padding: 4rem 0 3rem 0;
+
+  @media (min-width: 590px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  @media (min-width: 990px){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
 `;
 
-export const ProjectContainer = styled.div`
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media (min-width: 768px){
-        max-width: 720px;
-    }
-    @media (min-width: 576px){
-        max-width: 540px;
-    }
-`;
-
-export const ProjectSection = styled.div`
-  width: 100%;
-  background: var();
-`;
-
-export const ProjectTitle = styled.h1`
-  font-size: var(--header-1);
-  color: var(--text-color);
-  
-`;
-
-
-export const Skills = styled.div`
+export const GridCard = styled.article`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: o.5rem;
+  box-shadow: 0 0.1rem 0.1rem rgb(0 0 0 / 14%), 0 0.2rem 0.1rem rgb(0 0 0 / 12%), 0 0.1rem 0.3rem rgb(0 0 0 / 20%);
+`;
+export const GridCardImageContainer = styled.div`
+  width: auto;
+  border-bottom: 0.2rem rgba(0, 0, 0, 0.12) solid;
+`;
+
+export const GridCardImage = styled.img`
   width: 100%;
-  
-  
-
-  p {
-    padding: 5px 20px;
-    margin: 1em;
-    color: var(--text-color);
-    text-align: center;
-    animation: skills-carousel 30s linear infinite;
-
-    @media (min-width: 768px) {
-      padding: 10px 30px;
-      font-size: 18px;
-    }
-   
-
-    
-  }
-
-  @keyframes skills-carousel {
-    0% {
-      transform: translateX(0%);
-    }
-    25% {
-      transform: translateX(-25%);
-    }
-    50% {
-      transform: translateX(-50%);
-    }
-     75% {
-      transform: translateX(-75%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-
-  
+  height: auto;
+  border-radius: 0.5rem 0.5rem 0 0;
 `;
-export const TabContent = styled.div`
-    margin: 1.5em 0px;
-    column-gap: 1.5em;
-
-    @media only screen and (min-width: 1024px) {
-        column-count: 2;
-    }
-`; 
-
-
-export const ProjectItemImage = styled.div`
-  display: block;
-  width: 100%;
-  min-height: 80px;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
+export const GridCardText = styled.div`
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-size: 1.5rem;
+  flex: auto;
 `;
 
-export const ProjectItemImageImg = styled.img`
-  width: 100%;
-`;
-
-export const ProjectItemDetails = styled.div`
-  background-color: rgba(136, 136, 136, .05);
-  padding: 1em;
-`;
-
-export const ProjectItemTitle = styled.h3`
-  font-size: 1.3em;
+export const CardTextTitle = styled.h3`
+  font-size: var(--medium-font);
+  padding-bottom: 1rem;
   color: var(--text-color);
 `;
+export const CardTextParagraph = styled.p`
+  font-size: calc(var(--extra-small-font) + 1px);
+  color: white;
 
-export const CategoryHolder = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    font-size: .94em;
-    font-weight: var(--font-weight-medium);
-    transition: opacity 0.3s ease-in-out;
-
-  a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.534);
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+  p{
     
-
-    &:hover{
-      color: var(--secondary-color);
-    }
   }
-
-
- 
 `;
+export const CardLinks = styled.div`
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  background: #ededed;
+`;
+
+export const CardLinksItems = styled.a`
+  font-size: calc(var(--extra-small-font) + 1px);
+  font-family: var(--main-font);
+  transition: opacity 0.3s ease-in-out;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  &:hover{
+    color: var(--secondary-color);
+  }
+`;
+
