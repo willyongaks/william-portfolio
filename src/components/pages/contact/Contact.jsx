@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import { Col, Container, Row } from 'react-bootstrap';
 import { 
   MainContent,
@@ -9,44 +10,24 @@ import {
   FormInput,
   FormTextarea,
   SendButton,
-  Message,
+  // Message,
 } from './ContactStyles';
 
 function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [status, setStatus] = useState('');
+   const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const data = {
-      name,
-      email,
-      message,
-    }
 
-    fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-    .then((res) => {
-      if (res.status === 200) {
-        setStatus('success');
-        setName('');
-        setEmail('');
-        setMessage('');
-      }else{
-        setStatus('error')
-      }
-    })
-    .catch((error) => {
-      setStatus('error')
-    })
-  }
+    emailjs.sendForm('service_67y8wu2', 'template_3kq9psp', form.current, 'U6by-e20Z0xIhjVwk')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   return (
     <MainContent>
       <Container>
@@ -59,46 +40,36 @@ function Contact() {
               <b>william.ongaki10@gmail.com</b>
             </ArticleText>
           </article>
-          <FormContainer>
+          <FormContainer ref={form} onSubmit={sendEmail}>
             <FormFields>
               <FormInput 
                 type="text"
-                name="name"
+                name="user_name"
                 placeholder=" Name"
                 className='FromControl'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
                 required
               />
               <FormInput 
                 type="email"
-                name="email"
+                name="user_email"
                 placeholder=" Email"
                 className='FromControl'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                required
               />
               <FormTextarea 
                 name="message"
                 placeholder=" Message"
                 aria-required="true"
                 rows={5}
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
                 required
 
               />
             </FormFields>
-          </FormContainer>
-          {status === 'success' ? (
-            <Message>Message sent successfully!</Message>
-          ): status === 'error' ? (
-            <Message>Message sent unsuccessfully, please try again later</Message>
-          ): null}
-          <SendButton
+            <SendButton
             type='submit'
-            onClick={handleSubmit}
+            value='send'
           > Send message</SendButton>
+          </FormContainer>
           </Col>
         </Row>
       </Container>
@@ -106,4 +77,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Contact;

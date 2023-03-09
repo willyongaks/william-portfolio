@@ -74,6 +74,7 @@ export const Message = styled.p`
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
+  width: 60%;
 
   &.success {
     background-color: #d4edda;
