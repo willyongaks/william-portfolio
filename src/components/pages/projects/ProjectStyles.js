@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ProjectSection = styled.div`
   display: block;
-  
   position: relative;
   padding-bottom: 2rem;
 `;
