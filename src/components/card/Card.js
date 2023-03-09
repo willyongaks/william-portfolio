@@ -15,6 +15,7 @@ import shuzy from '../assets/shuzy.png';
 import Rainydays from '../assets/Rainydays.png';
 import gameset from '../assets/gameset.png';
 import KenyaSafari from '../assets/kenyaSafari.png';
+import SceienceMuseum from '../assets/museum.png';
 import { AiFillGithub } from "react-icons/ai";
 import { BiRightArrow } from "react-icons/bi";
 
@@ -102,7 +103,7 @@ const Card = () => {
              <GridCardImageContainer>
                  <GridCardImage src={KenyaSafari} alt="Soshols"/>
                  <GridCardText>
-                     <CardTextTitle>Kenya safari</CardTextTitle>
+                     <CardTextTitle>Kenya Safari</CardTextTitle>
                      <CardTextParagraph>My web blog application showcases my safari trip to Kenya, featuring photos, stories, and recommendations for future travelers. The app offers a personalized experience for users interested in African wildlife and culture.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
@@ -119,10 +120,10 @@ const Card = () => {
          {/* card 6 */}
          <GridCard>
              <GridCardImageContainer>
-                 <GridCardImage src={gameset} alt="Soshols"/>
+                 <GridCardImage src={SceienceMuseum} alt="Soshols"/>
                  <GridCardText>
-                     <CardTextTitle>Gameset</CardTextTitle>
-                     <CardTextParagraph>This is a project from school</CardTextParagraph>
+                     <CardTextTitle>Sceience Museum</CardTextTitle>
+                     <CardTextParagraph>My web application provides a centralized platform for a community science museum. It showcases opening hours, events, and exhibits, along with interactive educational content for visitors to learn about the museum's offerings.</CardTextParagraph>
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
