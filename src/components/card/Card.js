@@ -51,10 +51,10 @@ const Card = () => {
                  </GridCardText>
                  <CardLinks>
                      <CardLinksItems
-                     href="https://github.com/willyongaks/william-ongaki-semester-project-2">
+                     href="https://github.com/willyongaks/semester-proj-2">
                      <AiFillGithub/>Repository</CardLinksItems>
                      <CardLinksItems
-                     href="https://glowing-alfajores-e68984.netlify.app/">
+                     href="https://jazzy-selkie-193363.netlify.app">
                      <BiRightArrow/>Live</CardLinksItems>
                  </CardLinks>
              </GridCardImageContainer>
