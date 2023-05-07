@@ -11,9 +11,7 @@ import {
     CardLinksItems,
 } from './CardStyles';
 import soshols from '../assets/soshols.png';
-import shuzy from '../assets/shuzy.png';
 import Rainydays from '../assets/Rainydays.png';
-import gameset from '../assets/gameset.png';
 import KenyaSafari from '../assets/kenyaSafari.png';
 import SceienceMuseum from '../assets/museum.png';
 import { AiFillGithub } from "react-icons/ai";
