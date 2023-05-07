@@ -41,45 +41,8 @@ const Card = () => {
              </GridCardImageContainer>
          </GridCard>
 
-         {/* card 2 */}
-         <GridCard>
-             <GridCardImageContainer>
-                 <GridCardImage src={shuzy} alt="Soshols"/>
-                 <GridCardText>
-                     <CardTextTitle>Shuzy</CardTextTitle>
-                     <CardTextParagraph>I developed an e-commerce shoe store web application that provides a seamless shopping experience with a vast selection of high-quality shoes, filtering options, and secure checkout.</CardTextParagraph>
-                 </GridCardText>
-                 <CardLinks>
-                     <CardLinksItems
-                     href="https://github.com/willyongaks/semester-proj-2">
-                     <AiFillGithub/>Repository</CardLinksItems>
-                     <CardLinksItems
-                     href="https://jazzy-selkie-193363.netlify.app">
-                     <BiRightArrow/>Live</CardLinksItems>
-                 </CardLinks>
-             </GridCardImageContainer>
-         </GridCard>
 
-         {/* Card 3 */}
-         <GridCard>
-             <GridCardImageContainer>
-                 <GridCardImage src={gameset} alt="Soshols"/>
-                 <GridCardText>
-                     <CardTextTitle>Gameset</CardTextTitle>
-                     <CardTextParagraph>A web application utilizing open-source APIs to build a comprehensive game database. The app features game information, reviews and recommendations for gaming enthusiasts.</CardTextParagraph>
-                 </GridCardText>
-                 <CardLinks>
-                     <CardLinksItems
-                     href="https://github.com/willyongaks/course-assignment-jsframework-ongaki">
-                     <AiFillGithub/>Repository</CardLinksItems>
-                     <CardLinksItems
-                     href="https://github.com/willyongaks/course-assignment-jsframework-ongaki">
-                     <BiRightArrow/>Live</CardLinksItems>
-                 </CardLinks>
-             </GridCardImageContainer>
-         </GridCard>
-
-         {/* Card 4 */}
+         {/* Card 2 */}
          <GridCard>
              <GridCardImageContainer>
                  <GridCardImage src={Rainydays} alt="Soshols"/>
